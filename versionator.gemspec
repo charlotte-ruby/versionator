@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{John McAliley}]
   s.date = %q{2011-07-21}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{set of rake tasks that allow you to update your release version, tag it and push to github}
   s.email = %q{john.mcaliley@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -32,11 +32,11 @@ Gem::Specification.new do |s|
     "lib/versionator/version.rb",
     "versionator.gemspec"
   ]
-  s.homepage = %q{http://github.com/johnmcaliley/versionator}
+  s.homepage = %q{http://github.com/charlotte-ruby/versionator}
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.5}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{versioning for your Rails 3 app}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

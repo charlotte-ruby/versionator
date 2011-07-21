@@ -13,10 +13,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "versionator"
-  gem.homepage = "http://github.com/johnmcaliley/versionator"
+  gem.homepage = "http://github.com/charlotte-ruby/versionator"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{versioning for your Rails 3 app}
+  gem.description = %Q{set of rake tasks that allow you to update your release version, tag it and push to github}
   gem.email = "john.mcaliley@gmail.com"
   gem.authors = ["John McAliley"]
   gem.add_dependency "systemu"
