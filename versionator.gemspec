@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{versionator}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{John McAliley}]
@@ -19,11 +19,18 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/versionator.rb"
+    "lib/tasks/versionator.rake",
+    "lib/versionator.rb",
+    "lib/versionator/file.rb",
+    "lib/versionator/git.rb",
+    "lib/versionator/railtie.rb",
+    "lib/versionator/version.rb",
+    "versionator.gemspec"
   ]
   s.homepage = %q{http://github.com/johnmcaliley/versionator}
   s.licenses = [%q{MIT}]
