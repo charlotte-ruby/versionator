@@ -12,24 +12,22 @@ Install with bundler
 
     $ bundle install
 
-Create initial VERSION file
-
-    bundle exec rake versionator:install
-
 == Usage
 
+There are 3 rake tasks for each version category.  If the VERSION file does not exist in the app root directory, the rake task will create it automatically
+
 Bump a patch version, git tag and push to github
-v1.1.1 moves to v1.1.2
+Example: v1.1.1 moves to v1.1.2
 
     bundle exec rake versionator:patch
 
 Bump a minor version, git tag and push to github
-v1.1.1 moves to v1.2.0
+Example: v1.1.1 moves to v1.2.0
 
     bundle exec rake versionator:minor
 
 Bump a major version, git tag and push to github
-v1.1.1 moves to v2.0.0
+Example: v1.1.1 moves to v2.0.0
 
     bundle exec rake versionator:major
 
@@ -43,6 +41,7 @@ v1.1.1 moves to v2.0.0
 * Commit and push until you are happy with your contribution
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+*** Tests are located in a separate repository, since their needs to be a project to tag against.  Here is the test repo: git@github.com:johnmcaliley/test_app.git
 
 == Copyright
 
