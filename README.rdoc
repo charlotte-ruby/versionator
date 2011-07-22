@@ -16,7 +16,7 @@ Install with bundler
 
 Versionator pushes the git tag and VERSION file to your project's github repository (origin master) each time you run the rake tasks.  It is recommended that you commit all code and push to master before bumping your version.  
 
-The order of execution is for the rake tasks are as follows:
+Order of execution for the rake tasks:
 
 1. Bump the version locally based on the version in /your_app/VERSION
 2. Write the new version to /your_app/VERSION
