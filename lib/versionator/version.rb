@@ -40,12 +40,23 @@ module Versionator
     end
 
     def git_release
-      output = git_checkout
-      output += git_pull
-      output += git_tag
-      output += git_commit
-      output += git_push
+      current_branch = git_current_branch
+      if current_branch == 'master' || confirm_branch(current_branch)
+        output = git_checkout(current_branch)
+        output += git_pull(current_branch)
+        output += git_tag
+        output += git_commit
+        output += git_push(current_branch)
+      else
+        output = "Aborting tag. Check out the correct branch and try again."
+      end
       output
+    end
+
+    def confirm_branch(branch)
+      print "Tagging new version on current branch [#{branch}]. Continue? [y]: "
+      response = $stdin.gets
+      (response =~ /y/i || response == "\n")
     end
 
     def release(category)
